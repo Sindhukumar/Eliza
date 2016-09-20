@@ -21,6 +21,7 @@ public class Eliza {
 		salutationSet.add("Hello");
 		salutationSet.add("Greetings");
 		hedgeSet.add("Interesting, Please tell me more");
+		hedgeSet.add("wait a minute...I didn't quite get that...");
 		hedgeSet.add("Many of my patients tell me the same thing");
 		hedgeSet.add("It is getting late, maybe we had better quit");
 		qualifierSet.add("Why do you say that");
@@ -44,7 +45,7 @@ public class Eliza {
 				break;
 			} 
 			if (isqualifier(response)) {
-				System.out.println(hasSalutation() + randomSet(qualifierSet) + "..." + replace(response));
+				System.out.println(hasSalutation() + randomSet(qualifierSet) + "" + replace(response));
 			} else
 				System.out.println(hasSalutation() +randomSet(hedgeSet));
 		}
